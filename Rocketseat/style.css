@@ -33,6 +33,8 @@ body {
 
   /* SHORTCUT background: color image repeat position/size */
   /*background: url(./assets/bg-mobile.jpg) no-repeat top center/cover;*/
+
+  height: 100vh;
 }
 
 body * {
@@ -162,4 +164,16 @@ footer {
   padding: 24px 0;
   text-align: center;
   font-size: 14px;
+}
+
+/* media queries */
+/* at rule */
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(/assets/bg-desktop.jpg);
+  }
+
+  .light {
+    --bg-url: url(/assets/bg-desktop-light.jpg);
+  }
 }
